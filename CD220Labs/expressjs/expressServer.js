@@ -1,3 +1,13 @@
+ /*to run the app:
+ npm install --save express
+ node expressServer.js
+
+ --split the terminal--
+
+ curl localhost:3333
+
+ */
+
  // Import the Express.js library
 const express = require('express');
 
