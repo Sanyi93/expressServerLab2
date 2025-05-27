@@ -5,6 +5,7 @@ const express = require('express');
 const app = new express();
 
 // Middleware to check for a specific password in query parameters
+
 app.use(function (req, res, next) {
     // Check if the password query parameter matches the expected value
     if (req.query.password !== "pwd123") {
@@ -18,6 +19,7 @@ app.use(function (req, res, next) {
 });
 
 // Define a route for the /home path
+//curl http://localhost:3333/home?password=pwd123
 app.get("/home", (req, res) => {
     // Send a "Hello World!" message as a response
     return res.send("Hello World!");
